@@ -136,11 +136,6 @@ namespace sparrow_extensions
                 // Check extension metadata exists
                 const auto& schema = proxy.schema();
                 REQUIRE(schema.metadata != nullptr);
-
-                // Note: Parsing Arrow metadata format is complex (it's a flatbuffer).
-                // The metadata is set correctly in the implementation, but parsing it
-                // requires understanding the Arrow IPC metadata format.
-                // For now, we verify that metadata exists.
             }
         }
 

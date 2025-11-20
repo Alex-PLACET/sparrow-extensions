@@ -1,4 +1,4 @@
-name: sparrow-ipc
+name: sparrow-extensions
 channels:
   - conda-forge
 dependencies:

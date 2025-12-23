@@ -84,7 +84,7 @@ set(SPARROW_EXTENSIONS_INTERFACE_DEPENDENCIES sparrow::sparrow)
 find_package_or_fetch(
     PACKAGE_NAME simdjson
     GIT_REPOSITORY https://github.com/simdjson/simdjson.git
-    TAG v2.4.12
+    TAG v4.2.4
 )
 
 set(SPARROW_EXTENSIONS_INTERFACE_DEPENDENCIES ${SPARROW_EXTENSIONS_INTERFACE_DEPENDENCIES} simdjson::simdjson)
@@ -93,7 +93,7 @@ if(SPARROW_EXTENSIONS_BUILD_TESTS)
     find_package_or_fetch(
         PACKAGE_NAME doctest
         GIT_REPOSITORY https://github.com/doctest/doctest.git
-        TAG v4.2.4
+        TAG v2.4.12
     )
 
     # better_junit_reporter is provided by sparrow
